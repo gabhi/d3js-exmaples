@@ -3,108 +3,8 @@
 <head>
 <title>NVD3 Examples List</title>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<style>
-
-/*
- * Base structure
- */
-
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-}
-
-
-/*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-
-/*
- * Sidebar
- */
-
-/* Hide for mobile, show later */
-.sidebar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-  }
-}
-
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a {
-  color: #fff;
-  background-color: #428bca;
-}
-
-
-/*
- * Main content
- */
-
-.main {
-  padding: 20px;
-}
-@media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-.main .page-header {
-  margin-top: 0;
-}
-
-
-/*
- * Placeholder dashboard ideas
- */
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}
-
-
  
-</style>
+<link rel="stylesheet" href="app.css">
 
 
 </head>
@@ -135,54 +35,56 @@ body {
         <div class="col-sm-3 col-md-2 sidebar">
 	
 <h2>D3 Examples List</h2>
+<div id="sidebarItems">
 <ul class="nav nav-sidebar">
-<li><a class="aa" href="pie.html" >Bullet</a>
-<li><a href="bulletChart.html">BulletChart</a>
-<li><a href="crossfilter.html">Crossfilter</a>
-<li><a href="crossfilterWithDimentions.html">CrossfilterWithDimentions</a>
-<li><a href="crossfilterWithTables.html">CrossfilterWithTables</a>
-<li><a href="cumulativeLineChart.html">CumulativeLineChart</a>
-<li><a href="discreteBarChart.html">DiscreteBarChart</a>
-<li><a href="historicalBar.html">HistoricalBar</a>
-<li><a href="historicalBarChart.html">HistoricalBarChart</a>
-<li><a href="horizon.html">Horizon</a>
-<li><a href="indentedtree.html">Indentedtree</a>
-<li><a href="legend.html">Legend</a>
-<li><a href="line.html">Line</a>
-<li><a href="lineChart.html">LineChart</a>
-<li><a href="lineChartSVGResize.html">LineChartSVGResize</a>
-<li><a href="linePlusBarChart.html">LinePlusBarChart</a>
-<li><a href="linePlusBarWithFocusChart.html">LinePlusBarWithFocusChart</a>
-<li><a href="lineWithFisheyeChart.html">LineWithFisheyeChart</a>
-<li><a href="lineWithFocusChart.html">LineWithFocusChart</a>
+<li><a class="sidebaerLink" href="bullet.html" >Bullet</a>
+<li><a class="sidebaerLink"  href="bulletChart.html">BulletChart</a>
+<li><a class="sidebaerLink"  href="crossfilter.html">Crossfilter</a>
+<li><a class="sidebaerLink"  href="crossfilterWithDimentions.html">CrossfilterWithDimentions</a>
+<li><a class="sidebaerLink"  href="crossfilterWithTables.html">CrossfilterWithTables</a>
+<li><a class="sidebaerLink" href="cumulativeLineChart.html">CumulativeLineChart</a>
+<li><a class="sidebaerLink" href="discreteBarChart.html">DiscreteBarChart</a>
+<li><a class="sidebaerLink" href="historicalBar.html">HistoricalBar</a>
+<li><a class="sidebaerLink" href="historicalBarChart.html">HistoricalBarChart</a>
+<li><a class="sidebaerLink" href="horizon.html">Horizon</a>
+<li><a class="sidebaerLink" href="indentedtree.html">Indentedtree</a>
+<li><a class="sidebaerLink" href="legend.html">Legend</a>
+<li><a class="sidebaerLink"  href="line.html">Line</a>
+<li><a class="sidebaerLink" href="lineChart.html">LineChart</a>
+<li><a class="sidebaerLink" href="lineChartSVGResize.html">LineChartSVGResize</a>
+<li><a class="sidebaerLink" href="linePlusBarChart.html">LinePlusBarChart</a>
+<li><a class="sidebaerLink" href="linePlusBarWithFocusChart.html">LinePlusBarWithFocusChart</a>
+<li><a class="sidebaerLink" href="lineWithFisheyeChart.html">LineWithFisheyeChart</a>
+<li><a class="sidebaerLink" href="lineWithFocusChart.html">LineWithFocusChart</a>
 </ul>
 <ul class="nav nav-sidebar">
-<li><a href="multiBar.html">MultiBar</a>
-<li><a href="multiBarChart.html">MultiBarChart</a>
-<li><a href="multiBarHorizontalChart.html">MultiBarHorizontalChart</a>
-<li><a href="multiChart.html">MultiChart</a>
-<li><a href="parallelCoordinates.html">ParallelCoordinates</a>
-<li><a href="pie.html">Pie</a>
-<li><a href="pieChart.html">PieChart</a>
-<li><a href="scatter.html">Scatter</a>
-<li><a href="scatterChart.html">ScatterChart</a>
-<li><a href="scatterPlusLineChart.html">ScatterPlusLineChart</a>
-<li><a href="sparkline.html">Sparkline</a>
-<li><a href="sparklinePlus.html">SparklinePlus</a>
-<li><a href="stackedArea.html">StackedArea</a>
-<li><a href="stackedAreaChart.html">StackedAreaChart</a>
+<li><a class="sidebaerLink" href="multiBar.html">MultiBar</a>
+<li><a class="sidebaerLink" href="multiBarChart.html">MultiBarChart</a>
+<li><a class="sidebaerLink" href="multiBarHorizontalChart.html">MultiBarHorizontalChart</a>
+<li><a class="sidebaerLink" href="multiChart.html">MultiChart</a>
+<li><a class="sidebaerLink" href="parallelCoordinates.html">ParallelCoordinates</a>
+<li><a class="sidebaerLink" href="pie.html">Pie</a>
+<li><a class="sidebaerLink" href="pieChart.html">PieChart</a>
+<li><a class="sidebaerLink" href="scatter.html">Scatter</a>
+<li><a class="sidebaerLink" href="scatterChart.html">ScatterChart</a>
+<li><a class="sidebaerLink" href="scatterPlusLineChart.html">ScatterPlusLineChart</a>
+<li><a class="sidebaerLink" href="sparkline.html">Sparkline</a>
+<li><a class="sidebaerLink" href="sparklinePlus.html">SparklinePlus</a>
+<li><a class="sidebaerLink" href="stackedArea.html">StackedArea</a>
+<li><a class="sidebaerLink" href="stackedAreaChart.html">StackedAreaChart</a>
 </ul>
 
 <ul class="nav nav-sidebar">
 	<strong>Test pages</strong>
-	<li><a href="../test/lineChartTest.html">Line Chart</a></li>
-	<li><a href="../test/pieChartTest.html">Pie Chart</a></li>
-	<li><a href="../test/ScatterChartTest.html">Scatter Chart</a></li>
-	<li><a href="../test/stackedAreaChartTest.html">Stacked Area Chart</a></li>
-	<li><a href="../test/multiBarChartTest.html">Multibar Chart</a></li>
-	<li><a href="../test/polylinearTest.html">Polylinear Scale Line Chart</a></li>
-	<li><a href="../test/realTimeChartTest.html">Real Time Chart</a></li>
+	<li><a class="sidebaerLink" href="../test/lineChartTest.html">Line Chart</a></li>
+	<li><a class="sidebaerLink" href="../test/pieChartTest.html">Pie Chart</a></li>
+	<li><a class="sidebaerLink" href="../test/ScatterChartTest.html">Scatter Chart</a></li>
+	<li><a class="sidebaerLink" href="../test/stackedAreaChartTest.html">Stacked Area Chart</a></li>
+	<li><a class="sidebaerLink" href="../test/multiBarChartTest.html">Multibar Chart</a></li>
+	<li><a class="sidebaerLink" href="../test/polylinearTest.html">Polylinear Scale Line Chart</a></li>
+	<li><a class="sidebaerLink"  href="../test/realTimeChartTest.html">Real Time Chart</a></li>
 </ul>
+</div>
 </div>
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="displaycharts">
 <iframe src="pie.html" width="100%" height="100%" name="search_iframe"></iframe></div>
@@ -190,9 +92,21 @@ body {
 	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		 <script>
 $(function() {
- $('a').each(function(){
+
+
+
+ 
+ $('.sidebaerLink').each(function(){
      $(this).attr("target","search_iframe");
 });
+
+ $('a').on('click', function() {
+    $(this).parent().parent().find('.active').removeClass('active');
+    $(this).parent().addClass('active');
+     
+});
+
+
 });
 </script>
 </body>
